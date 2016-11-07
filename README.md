@@ -4,3 +4,8 @@ This repository contains artifacts for Arduino Musical Fingerboard which was exe
 # Team Members:-
 - Mangirish Wagle
 - Gourav Shenoy
+
+# Tech Requirements:-
+- Sparkfun Arduino Toolkit
+- Arduino IDE
+- Fritzing
