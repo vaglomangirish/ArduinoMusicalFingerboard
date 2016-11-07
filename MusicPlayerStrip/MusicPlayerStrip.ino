@@ -1,65 +1,11 @@
 /*
 SparkFun Inventor's Kit 
-Example sketch 10
 
-SOFT POTENTIOMETER
+Authors: Mangirish Wagle
+         Gourav Shenoy
 
-  Use the soft potentiometer to change the color
-  of the RGB LED
+Arduino code file for Musical Fingerboard.
 
-  The soft potentiometer is a neat input device that detects 
-  pressure along its length. When you press it down with a finger
-  (it works best on a flat surface), it will change resistance
-  depending on where you're pressing it. You might use it to make
-  a piano or light dimmer; here we're going to use it to control
-  the color of an RGB LED.
-
-Hardware connections:
-
-  Soft potentiometer:
-
-    The soft potentiometer is the large plastic strip with three
-    pins. We'll be connecting it as a voltage divider, just like
-    we did with the knob-type potentiometer back in circuit #2.
-
-    Connect the middle pin to ANALOG IN pin 0 on the Arduino.
-    Connect one side to 5V.
-    Connect the other side to GND.
-    Also connect a 10K resistor from the middle pin to GND.
-
-    TIP: the soft pot will only work while you're actively
-    pressing on it; at other times it will "float" to random
-    values. To prevent this, we've added a 10K pull-down resistor
-    to the middle pin (output voltage). This will keep the output
-    at zero volts when the pot is not being pressed.
-
-  RGB LED:
-
-    An RGB LED is actually three LEDs (red, green, and blue)
-    in one package. When we run them at different brightnesses,
-    they mix to form new colors.
-
-    Starting at the flattened edge of the flange on the LED,
-    the pins are ordered RED, COMMON, GREEN, BLUE.
-
-    Connect RED to a 330 Ohm resistor.
-    Connect the other end of the resistor to Arduino digital pin 9.
-
-    Connect COMMON to GND.
-
-    Connect GREEN through a 330 Ohm resistor.
-    Connect the other end of the resistor to Arduino digital pin 10.
-
-    Connect BLUE through a 330 Ohm resistor.
-    Connect the other end of the resistor to Arduino digital pin 11.
-
-This sketch was written by SparkFun Electronics,
-with lots of help from the Arduino community.
-This code is completely free for any use.
-Visit http://learn.sparkfun.com/products/2 for SIK information.
-Visit http://www.arduino.cc to learn about the Arduino.
-
-Version 2.0 6/2012 MDG
 */
 
 const int SOFT_POT_PIN = 0;      // Analog input pin
@@ -115,6 +61,9 @@ int get_variance()
   return variance;  
 }
 
+/**
+ * Function that shuts off the RGB LED.
+ */
 int reset_led() {
 
   // No light on LED
@@ -206,6 +155,9 @@ void loop()
   // Serial.println(photo_resist_sensor_value);
 }
 
+/**
+ * Function that returns the frequency of a note based on the currect selected scale.
+ */
 int frequency(char note) 
 {
   // This function takes a note character (a-g), and returns the
