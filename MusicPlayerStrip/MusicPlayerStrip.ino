@@ -175,9 +175,9 @@ int frequency(char note)
   // in single quotes.
 
   char names[] = { 'd', 'r', 'm', 'f', 's', 'l', 'c', 'D' };
-  int frequencies_c[] = {262, 294, 330, 349, 392, 440, 494, 523};
-  int frequencies_g[] = {392, 440, 494, 523, 587, 659, 740, 784};
-  int frequencies_a[] = {440, 494, 554, 587, 659, 740, 831, 880};
+  int frequencies_c[] = {262, 294, 330, 349, 392, 440, 494, 523}; // C Major Scale
+  int frequencies_g[] = {392, 440, 494, 523, 587, 659, 740, 784}; // G Major Scale
+  int frequencies_a[] = {440, 494, 554, 587, 659, 740, 831, 880}; // A Major Scale
 
   // Now we'll search through the letters in the array, and if
   // we find it, we'll return the frequency for that note.
