@@ -160,19 +160,11 @@ void loop()
  */
 int frequency(char note) 
 {
-  // This function takes a note character (a-g), and returns the
+  // This function takes a note character [d(Do),r (Re),m (Mi),f (Fa),s (So),l (La),c (Si),D (Upper Do)], and returns the
   // corresponding frequency in Hz for the tone() function.
 
   int i;
   const int numNotes = 8;  // number of notes we're storing
-
-  // The following arrays hold the note characters and their
-  // corresponding frequencies. The last "C" note is uppercase
-  // to separate it from the first lowercase "c". If you want to
-  // add more notes, you'll need to use unique characters.
-
-  // For the "char" (character) type, we put single characters
-  // in single quotes.
 
   char names[] = { 'd', 'r', 'm', 'f', 's', 'l', 'c', 'D' };
   int frequencies_c[] = {262, 294, 330, 349, 392, 440, 494, 523}; // C Major Scale
