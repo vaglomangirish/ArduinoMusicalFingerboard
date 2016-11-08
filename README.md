@@ -1,11 +1,14 @@
 # ArduinoMusicalFingerboard
 This repository contains artifacts for Arduino Musical Fingerboard which was executed as a project for a Lab Challenge as a part of I527: Mobile Pervasive Computing course at Indiana University Bloomington.
 
-# Team Members:-
+# Team Members:
 - Mangirish Wagle
 - Gourav Shenoy
 
-# Tech Requirements:-
+# Tech Requirements:
 - Sparkfun Arduino Toolkit
 - Arduino IDE
 - Fritzing
+
+# Demonstration:
+ The demo video has been uploaded to youtube: https://www.youtube.com/watch?v=bxVATr5MnYo
